@@ -1,0 +1,23 @@
+/Bot/Resources/config.json
+
+# Node.js
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+*.log
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Opzionale: evita di includere cartelle di test temporanei
+coverage/

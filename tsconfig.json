@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* --- Opzioni Base di Compilazione --- */
+    "target": "ES2022",                     // Compila il codice in una versione moderna di JavaScript che Node.js supporta nativamente.
+    "lib": ["ES2022"],                       // Specifica le librerie standard di JavaScript disponibili.
+    "module": "NodeNext",                   // Il sistema di moduli da usare. 'NodeNext' è la scelta moderna per Node.js.
+    "moduleResolution": "NodeNext",         // Come TypeScript cerca i moduli. Va usato in coppia con "module": "NodeNext".
+    "outDir": "./dist",                     // La cartella dove verrà salvato il codice JavaScript compilato.
+    "rootDir": "./Bot",                     // La cartella che contiene il codice sorgente TypeScript.
+    "allowImportingTsExtensions": true,
+
+
+    /* --- Strettezza del Codice e Qualità --- */
+    "strict": true,                         // Abilita tutte le opzioni di controllo stretto dei tipi. FORTEMENTE RACCOMANDATO.
+    "noImplicitAny": true,                  // Segnala un errore su variabili con tipo 'any' implicito.
+    "strictNullChecks": true,               // Gestisce 'null' e 'undefined' in modo più sicuro.
+    "forceConsistentCasingInFileNames": true, // Assicura che i nomi dei file importati abbiano un case consistente.
+
+    /* --- Interoperabilità e Funzionalità Aggiuntive --- */
+    "esModuleInterop": true,                // Migliora l'interoperabilità tra moduli CommonJS e ES Modules, semplificando gli import.
+    "allowJs": true,                        // Permette di includere e compilare anche file .js nel progetto. Utile per migrazioni graduali.
+    "resolveJsonModule": true,              // Permette di importare file .json direttamente come moduli.
+    "skipLibCheck": true,                   // Salta il controllo dei tipi nei file di dichiarazione (.d.ts) delle dipendenze, velocizzando la compilazione.
+
+    /* --- Debugging --- */
+    "sourceMap": true                       // Genera i file .map che collegano il codice compilato al codice sorgente, essenziale per il debug.
+  },
+  "include": ["Bot/**/*"],                  // Dice a TypeScript di compilare tutti i file dentro la cartella 'bot'.
+  "exclude": ["node_modules"]               // Esclude la cartella delle dipendenze dalla compilazione.
+}
